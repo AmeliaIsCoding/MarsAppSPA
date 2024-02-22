@@ -1,0 +1,9 @@
+
+  .Component2-button {
+    font-size: calc(10px + 1vmin);
+    color: white;
+    background-color: firebrick;
+    border-width: 4px;
+    height: calc(40px + 2vmin);
+    border-color: black;
+  }

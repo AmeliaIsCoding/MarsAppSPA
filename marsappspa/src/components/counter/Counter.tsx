@@ -10,6 +10,7 @@ function Counter() {
   }, [count])
   return (
     <div className="Counter">
+        <p className="Counter-title">Counter 1</p>
         <button className="Counter-button" onClick={() => setCount(count+1)}>
           {count}
         </button>

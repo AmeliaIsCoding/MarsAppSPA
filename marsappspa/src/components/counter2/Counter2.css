@@ -1,0 +1,12 @@
+ .Counter2 {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+ } 
+ 
+  
+  .Counter2-title {
+    font-size: calc(8px + 2vmin);
+    text-decoration: underline;
+  }
+  

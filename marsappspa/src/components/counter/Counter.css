@@ -1,5 +1,6 @@
 .Counter {
     text-align: center;
+    margin-right: 100px;
   }
   
   .Counter-button {
@@ -13,4 +14,9 @@
     border-color: black;
   }
   
+  .Counter-title {
+    font-size: calc(6px + 2vmin);
+    color: white;
+    text-decoration: underline;
+  }
   
