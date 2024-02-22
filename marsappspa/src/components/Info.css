@@ -1,0 +1,20 @@
+.Info {
+    text-align: center;
+  }
+  
+  .Info-image {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .Info-title {
+    font-size: calc(14px + 2vmin);
+    color: white;
+  }
+
+  .Info-para {
+    font-size: calc(6px + 2vmin);
+    color: white;
+  }
+  
+  
