@@ -1,0 +1,16 @@
+.Counter {
+    text-align: center;
+  }
+  
+  .Counter-button {
+    font-size: calc(6px + 2vmin);
+    color: white;
+    background-color: firebrick;
+    height: calc(40px + 2vmin);
+    width: calc(40px + 2vmin);
+    margin-bottom: 20px;
+    border-width: 4px;
+    border-color: black;
+  }
+  
+  
