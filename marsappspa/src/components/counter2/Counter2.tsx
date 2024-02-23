@@ -14,13 +14,13 @@ function Counter2() {
   }, [count])
   return (
     <CountContext.Provider value={{count, setCount}}>
-    <div className="Counter2">
-      <p className="Counter2-title">Counter 2</p>
-      <div className="Counter2-component1">
-        <Component2 />
-        <Component3 />
+      <div className="Counter2">
+        <p className="Counter2-title">Counter 2</p>
+        <div className="Counter2-component1">
+          <Component2 />
+          <Component3 />
+        </div>
       </div>
-    </div>
     </CountContext.Provider>
   );
 }
