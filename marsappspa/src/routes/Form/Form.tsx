@@ -1,5 +1,5 @@
 import './Form.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import React from 'react';
 import Select from 'react-select';
@@ -9,9 +9,15 @@ import { Rover } from "../../models/Rover";
 import { RoversResponse } from "../../models/RoversResponse";
 
 function Form() {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/search/${chosenRover}/${chosenCamera}`; 
+    navigate(path);
+  }
    const [rovers, setRovers] = React.useState<Rover[]>();
    const [chosenRover, setChosenRover] = React.useState<Rover>();
    const [allowedCameras, setAllowedCameras] = React.useState<Camera[]>([]);
+   const [chosenCamera, setChosenCamera] = React.useState<Camera>();
    React.useEffect(() => {
     async function loadData() {
       try {
@@ -45,7 +51,7 @@ function Form() {
           </div>
           <div className="Form-row">
         <p className="Form-text">Choose a camera:</p>
-        <Select options={(allowedCameras).map((camera) => {return {value: camera, label: camera}})}  styles={{
+        <Select options={(allowedCameras).map((camera) => {return {value: camera, label: camera}})} onChange={(choice) => setChosenCamera(choice?.value)} styles={{
           control: (baseStyles, state) => ({
             ...baseStyles,
             borderColor: state.isFocused ? 'grey' : 'red',
@@ -54,6 +60,7 @@ function Form() {
           }),
           }} />
       </div>
+      <button disabled={!(chosenRover&&chosenCamera)} className='Form-search' onClick={routeChange}>Search</button>
       <Link className="Form-homeLink" to="/">Home</Link>
     </div>
   );

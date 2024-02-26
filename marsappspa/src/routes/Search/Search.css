@@ -1,0 +1,33 @@
+.Search {
+  text-align: center;
+}
+
+.Search-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 100px;
+}
+
+.Search-row {
+  flex-direction: row;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+.Search-image {
+  padding-top: 50px;
+}
+.Search-link {
+  margin: 50px;
+  text-decoration: underline;
+  color:royalblue;
+}
+.Search-body {
+  font-size: calc(10px + 1vmin);
+}

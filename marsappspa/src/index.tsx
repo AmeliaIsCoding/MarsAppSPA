@@ -5,6 +5,7 @@ import App from './routes/App/App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Form from './routes/Form/Form';
+import Search from './routes/Search/Search';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/form",
     element: <Form />
   },
+  {
+    path: "/search/:rover/:camera",
+    element: <Search />,
+  }
 ]);
 
 root.render(
