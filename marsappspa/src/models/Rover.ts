@@ -1,0 +1,1 @@
+export type Rover = 'Curiosity' | 'Opportunity' | 'Spirit';

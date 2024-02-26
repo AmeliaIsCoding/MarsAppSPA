@@ -4,7 +4,7 @@ import './index.css';
 import App from './routes/App/App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Counters from './routes/Counters/Counter';
+import Form from './routes/Form/Form';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "/counters",
-    element: <Counters />
+    path: "/form",
+    element: <Form />
   },
 ]);
 

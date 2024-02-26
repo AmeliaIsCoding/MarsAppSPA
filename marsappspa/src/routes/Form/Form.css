@@ -1,25 +1,28 @@
-.Counters {
+.Form {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: top;
   justify-content: top;
   font-size: calc(10px + 2vmin);
-  color: white;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 200px;
 }
-.Counters-row {
+.Form-row {
   flex-direction: row;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
 }
-.Counters-homeLink {
+.Form-homeLink {
   padding-top: 100px;
   text-decoration: underline;
   color:royalblue;
+}
+.Form-text {
+  color: white;
+  padding-right: 50px;
 }
